@@ -31,7 +31,13 @@ export default function Home() {
     <div>
       <Navbar />
       <article>
-        <Image className="-z-10" src={desk} width={2000} height={600}></Image>
+        <Image
+          alt=""
+          className="-z-10"
+          src={desk}
+          width={2000}
+          height={600}
+        ></Image>
       </article>
       <article className="mx-auto w-2/3">
         <div className="py-5 text-center text-5xl font-bold">About me</div>
@@ -89,18 +95,18 @@ export default function Home() {
             </div>
             <div className="flex justify-start gap-2 pl-5">
               <div className="border-2 border-solid py-1">
-                <Image src={html} width={190} height={100}></Image>
+                <Image alt="" src={html} width={190} height={100}></Image>
               </div>
               <div className="border-2 border-solid py-1">
-                <Image src={js} width={190} height={92}></Image>
+                <Image alt="" src={js} width={190} height={92}></Image>
               </div>
               <div className="flex items-center justify-center border-2 border-solid py-1">
                 <div className="w-4/5">
-                  <Image src={css} width={190} height={90}></Image>
+                  <Image alt="" src={css} width={190} height={90}></Image>
                 </div>
               </div>
               <div className="border-2 border-solid py-1">
-                <Image src={ty} width={190} height={90}></Image>
+                <Image alt="" src={ty} width={190} height={90}></Image>
               </div>
             </div>
           </div>
@@ -112,22 +118,22 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-start gap-2 pl-5">
               <div className="border-2 border-solid">
-                <Image src={next} width={190} height={100}></Image>
+                <Image alt="" src={next} width={190} height={100}></Image>
               </div>
               <div className="border-2 border-solid">
-                <Image src={react} width={190} height={100}></Image>
+                <Image alt="" src={react} width={190} height={100}></Image>
               </div>
               <div className="border-2 border-solid">
-                <Image src={redux} width={190} height={100}></Image>
+                <Image alt="" src={redux} width={190} height={100}></Image>
               </div>
               <div className="border-2 border-solid">
-                <Image src={recoil} width={190} height={100}></Image>
+                <Image alt="" src={recoil} width={190} height={100}></Image>
               </div>
               <div className="border-2 border-solid">
-                <Image src={tailwind} width={190} height={100}></Image>
+                <Image alt="" src={tailwind} width={190} height={100}></Image>
               </div>
               <div className="flex border-2 border-solid">
-                <Image src={styled} width={190} height={100}></Image>
+                <Image alt="" src={styled} width={190} height={100}></Image>
               </div>
             </div>
           </div>
@@ -137,19 +143,19 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-start gap-2 pl-5">
               <div className=" border-2  border-solid py-2">
-                <Image src={git} width={190} height={85}></Image>
+                <Image alt="" src={git} width={190} height={85}></Image>
               </div>
               <div className=" border-2  border-solid py-2">
-                <Image src={github} width={190} height={85}></Image>
+                <Image alt="" src={github} width={190} height={85}></Image>
               </div>
               <div className=" border-2  border-solid py-2">
-                <Image src={aws} width={190} height={85}></Image>
+                <Image alt="" src={aws} width={190} height={85}></Image>
               </div>
               <div className=" border-2  border-solid py-2">
-                <Image src={netlify} width={190} height={85}></Image>
+                <Image alt="" src={netlify} width={190} height={85}></Image>
               </div>
               <div className=" border-2  border-solid py-2">
-                <Image src={notion} width={190} height={85}></Image>
+                <Image alt="" src={notion} width={190} height={85}></Image>
               </div>
             </div>
           </div>
@@ -158,7 +164,7 @@ export default function Home() {
       <article className="mx-auto w-2/3 pt-20">
         <div className="pb-10 text-center text-5xl font-bold">Archiving</div>
         <div className="mx-auto flex w-1/2 rounded-xl border-2 border-solid py-5">
-          <Image src={github}></Image>
+          <Image alt="" src={github}></Image>
           <div className="">
             <a
               className="text-blue-500"
