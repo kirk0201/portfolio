@@ -4,7 +4,7 @@ export default function navbar() {
       <div className="relative left-1/2 w-2/3 -translate-x-1/2 bg-transparent py-5">
         <div className="flex">
           <div className="w-2/3 bg-transparent text-lg font-bold">
-            Kim's PortFolio
+            Kims PortFolio
           </div>
           <nav className="flex w-full justify-between font-bold">
             <li className="text-lg">Home</li>
