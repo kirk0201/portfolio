@@ -1,9 +1,9 @@
 export default function navbar() {
   return (
-    <div className="relative">
-      <div className="fixed left-1/2 w-2/3 -translate-x-1/2 bg-green-300 py-5">
+    <div className="fixed z-10 h-16 w-full bg-white shadow-2xl">
+      <div className="relative left-1/2 w-2/3 -translate-x-1/2 bg-transparent py-5">
         <div className="flex">
-          <div className="w-2/3 bg-red-300 text-lg font-bold">
+          <div className="w-2/3 bg-transparent text-lg font-bold">
             Kim's PortFolio
           </div>
           <nav className="flex w-full justify-between font-bold">
