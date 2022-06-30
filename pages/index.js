@@ -164,6 +164,7 @@ export default function Home() {
               className="text-blue-500"
               href="https://github.com/kirk0201"
               target="_blank"
+              rel="noreferrer"
             >
               github.com/kirk0201
             </a>
