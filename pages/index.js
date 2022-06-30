@@ -14,7 +14,7 @@ import git from "../public/git.png";
 import github from "../public/github.png";
 import html from "../public/html.png";
 import js from "../public/js.png";
-import css from "../public/css.png";
+import css from "../public/css.jpg";
 import aws from "../public/aws.png";
 import netlify from "../public/netlify.png";
 import notion from "../public/notion.png";
@@ -94,8 +94,10 @@ export default function Home() {
               <div className="border-2 border-solid py-1">
                 <Image src={js} width={190} height={92}></Image>
               </div>
-              <div className="border-2 border-solid py-1">
-                <Image src={css} width={190} height={90}></Image>
+              <div className="flex items-center justify-center border-2 border-solid py-1">
+                <div className="w-4/5">
+                  <Image src={css} width={190} height={90}></Image>
+                </div>
               </div>
               <div className="border-2 border-solid py-1">
                 <Image src={ty} width={190} height={90}></Image>
@@ -171,6 +173,9 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </article>
+      <article className="mx-auto w-2/3 pt-20">
+        <div className="py-20 text-center text-5xl font-bold">Projects</div>
       </article>
     </div>
   );
