@@ -31,6 +31,9 @@ import Bitcoin from "../components/Bitcoin";
 import Kanban from "../components/Kanban";
 import StarBucks from "../components/StarBucks";
 import Moom from "../components/Moom";
+import Maiim from "../components/Maiim";
+import Flixnet from "../components/Flixnet";
+import Market from "../components/Market";
 export default function Home() {
   return (
     <div>
@@ -189,10 +192,13 @@ export default function Home() {
       <article className="mx-auto w-2/3 pt-20">
         <div className="py-20 text-center text-5xl font-bold">Projects</div>
         <section className="space-y-20">
-          <Moom />
-          <StarBucks />
-          <Bitcoin />
+          <Market />
+          <Flixnet />
+          <Maiim />
           <Kanban />
+          <Bitcoin />
+          <StarBucks />
+          <Moom />
         </section>
       </article>
     </div>

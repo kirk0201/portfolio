@@ -13,8 +13,8 @@ export default function Moom() {
           <section className="font-semibold">
             <article>
               날짜별로 변화하는 나의 신체 사이즈를 작성하여 시간에 따라 변화
-              중인 나의 신체 사이즈를 그래프를 통해 한눈에 알아볼 수 있는
-              웹페이지입니다.
+              중인 나의 신체 변화를 그래프를 통해 한눈에 알아볼 수 있는
+              웹서비스입니다.
             </article>
             <br />
             <article>
