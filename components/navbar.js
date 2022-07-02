@@ -1,4 +1,4 @@
-export default function navbar() {
+export default function Navbar() {
   return (
     <div className="fixed z-10 h-16 w-full bg-white shadow-2xl">
       <div className="relative left-1/2 w-2/3 -translate-x-1/2 bg-transparent py-5">

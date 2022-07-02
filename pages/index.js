@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import desk from "../public/desk.jpg";
 import ty from "../public/typescript.png";
 import react from "../public/react.png";
@@ -26,6 +26,10 @@ import {
   Mail,
   School,
 } from "@material-ui/icons";
+import Bitcoin from "../components/bitcoin";
+import Kanban from "../components/Kanban";
+import StarBucks from "../components/StarBucks";
+import Moom from "../components/Moom";
 export default function Home() {
   return (
     <div>
@@ -36,7 +40,7 @@ export default function Home() {
           className="-z-10"
           src={desk}
           width={2000}
-          height={600}
+          height={570}
         ></Image>
       </article>
       <article className="mx-auto w-2/3">
@@ -183,6 +187,12 @@ export default function Home() {
       </article>
       <article className="mx-auto w-2/3 pt-20">
         <div className="py-20 text-center text-5xl font-bold">Projects</div>
+        <section className="space-y-20">
+          <Moom />
+          <StarBucks />
+          <Bitcoin />
+          <Kanban />
+        </section>
       </article>
     </div>
   );
