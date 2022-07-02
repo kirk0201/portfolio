@@ -5,12 +5,22 @@ export default function Summary({ fn, content, url, urls }) {
       <div>
         <div className="font-semibold">{content}</div>
         {url ? (
-          <a className="text-blue-500" href={url} target="_blank">
+          <a
+            className="text-blue-500"
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+          >
             {url}
           </a>
         ) : undefined}
         {urls ? (
-          <a className="block text-blue-500" href={urls} target="_blank">
+          <a
+            className="block text-blue-500"
+            href={urls}
+            target="_blank"
+            rel="noreferrer"
+          >
             {urls}
           </a>
         ) : undefined}
