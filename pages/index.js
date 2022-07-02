@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../components/Navbar";
+
 import desk from "../public/desk.jpg";
 import ty from "../public/typescript.png";
 import react from "../public/react.png";
@@ -26,7 +26,8 @@ import {
   Mail,
   School,
 } from "@material-ui/icons";
-import Bitcoin from "../components/bitcoin";
+import Navbar from "../components/Navbar";
+import Bitcoin from "../components/Bitcoin";
 import Kanban from "../components/Kanban";
 import StarBucks from "../components/StarBucks";
 import Moom from "../components/Moom";
