@@ -134,3 +134,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.swiper-pagination-bullet {
+  background-color: rgb(171, 187, 98) !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(95, 93, 238) !important;
+}

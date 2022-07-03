@@ -34,11 +34,25 @@ import Moom from "../components/Moom";
 import Maiim from "../components/Maiim";
 import Flixnet from "../components/Flixnet";
 import Market from "../components/Market";
+import useMoveScroll from "../components/useMoveScroll";
+
 export default function Home() {
+  const { element: ele, onMoveToElement: move } = useMoveScroll();
+  const { element: ele1, onMoveToElement: move1 } = useMoveScroll();
+  const { element: ele2, onMoveToElement: move2 } = useMoveScroll();
+  const { element: ele3, onMoveToElement: move3 } = useMoveScroll();
+  const { element: ele4, onMoveToElement: move4 } = useMoveScroll();
+  const { element: ele5, onMoveToElement: move5 } = useMoveScroll();
   return (
     <div>
-      <Navbar />
-      <article>
+      <Navbar
+        move={move}
+        move1={move1}
+        move2={move2}
+        move3={move3}
+        move4={move4}
+      />
+      <article ref={ele}>
         <Image
           alt=""
           className="-z-10"
@@ -48,8 +62,13 @@ export default function Home() {
         ></Image>
       </article>
       <article className="mx-auto w-2/3">
-        <div className="py-5 text-center text-5xl font-bold">About me</div>
-        <div className="grid grid-cols-3 gap-2 text-center text-2xl">
+        <header
+          className="pt-20 text-center text-5xl font-bold italic"
+          ref={ele1}
+        >
+          🔎 About me
+        </header>
+        <div className="grid grid-cols-3 gap-2 pt-10 text-center text-2xl">
           <div className="flex items-center justify-between rounded-lg border-2 border-solid border-gray-50 px-10 py-5 shadow-lg">
             <Person style={{ fontSize: "3rem" }} />
             <div className="flex flex-col justify-center">
@@ -95,7 +114,12 @@ export default function Home() {
         </div>
       </article>
       <article className="mx-auto w-2/3">
-        <div className="py-20 text-center text-5xl font-bold">Skills</div>
+        <header
+          className="py-20 text-center text-5xl font-bold italic"
+          ref={ele2}
+        >
+          📖 Skills
+        </header>
         <div className="space-y-10 rounded-xl text-2xl font-bold italic">
           <div className="gap-2 rounded-xl border-2 border-solid border-gray-50 py-5 shadow-md">
             <div className="py-5 pl-5">
@@ -170,7 +194,12 @@ export default function Home() {
         </div>
       </article>
       <article className="mx-auto w-2/3 pt-20">
-        <div className="pb-10 text-center text-5xl font-bold">Archiving</div>
+        <header
+          className="py-20 text-center text-5xl font-bold italic"
+          ref={ele3}
+        >
+          💼 Archiving
+        </header>
         <div className="mx-auto flex w-1/2 rounded-xl border-2 border-solid py-5">
           <Image alt="" src={github}></Image>
           <div className="">
@@ -190,7 +219,12 @@ export default function Home() {
         </div>
       </article>
       <article className="mx-auto w-2/3 pt-20">
-        <div className="py-20 text-center text-5xl font-bold">Projects</div>
+        <header
+          className="py-20 text-center text-5xl font-bold italic"
+          ref={ele4}
+        >
+          📋 Projects
+        </header>
         <section className="space-y-20">
           <Market />
           <Flixnet />

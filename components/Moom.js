@@ -1,14 +1,22 @@
+import Slide from "./Slide";
 import Summary from "./Summary";
 
 export default function Moom() {
   return (
     <div className="border-2 border-solid">
       <header className="py-5 text-center text-2xl font-semibold">m00m</header>
-      <p className="text-center text-sm text-gray-400">
+      <div className="text-center text-sm text-gray-400">
         20.11~20.12 4인 프로젝트
-      </p>
+      </div>
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
-        <section>사진</section>
+        <section>
+          <Slide
+            img1="/moom1.gif"
+            img2="/moom2.gif"
+            img3="/moom3.gif"
+            img4="/moom4.gif"
+          />
+        </section>
         <section>
           <section className="font-semibold">
             <article>
@@ -30,10 +38,10 @@ export default function Moom() {
               연습할 수 있었습니다.
               <br />
               <br />
-              <p className="text-sm italic text-gray-400">
+              <div className="text-sm italic text-gray-400">
                 🌧️현재 AWS프리티어 기간이 끝나 지나친 과금으로 인해 부득이하게
                 서버를 내렸습니다.
-              </p>
+              </div>
             </article>
             <br />
           </section>

@@ -1,3 +1,4 @@
+import Slide from "./Slide";
 import Summary from "./Summary";
 
 export default function Flixnet() {
@@ -6,9 +7,17 @@ export default function Flixnet() {
       <header className="py-5 text-center text-2xl font-semibold">
         FLIXNET
       </header>
-      <p className="text-center text-sm text-gray-400">22.4 개인 프로젝트</p>
+      <div className="text-center text-sm text-gray-400">
+        22.4 개인 프로젝트
+      </div>
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
-        <section>사진</section>
+        <section>
+          <Slide
+            img1="/flixnet1.gif"
+            img2="/flixnet2.gif"
+            img3="/flixnet3.gif"
+          />
+        </section>
         <section>
           <section className="font-semibold">
             <article>
