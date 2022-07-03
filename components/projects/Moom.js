@@ -1,12 +1,14 @@
-import Slide from "./Slide";
-import Summary from "./Summary";
+import Slide from "../Slide";
+import Summary from "../Summary";
 
 export default function Moom() {
   return (
-    <div className="border-2 border-solid">
-      <header className="py-5 text-center text-2xl font-semibold">m00m</header>
+    <div className="rounded-xl border-2 border-solid border-gray-200 bg-white shadow-xl">
+      <header className="py-5 text-center text-[3rem] font-bold text-gray-600">
+        m00m
+      </header>
       <div className="text-center text-sm text-gray-400">
-        20.11~20.12 4인 프로젝트
+        2020.11 ~ 2020.12 4인 프로젝트
       </div>
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
         <section>
@@ -19,28 +21,40 @@ export default function Moom() {
         </section>
         <section>
           <section className="font-semibold">
+            <header className="text-bold  text-lg italic text-gray-400">
+              📣소개
+            </header>
             <article>
               날짜별로 변화하는 나의 신체 사이즈를 작성하여 시간에 따라 변화
-              중인 나의 신체 변화를 그래프를 통해 한눈에 알아볼 수 있는
-              웹서비스입니다.
+              중인
+              <span className="text-blue-400">
+                나의 신체 변화를 그래프를 통해 한눈에 알아볼 수 있는 웹서비스
+              </span>
+              입니다.
             </article>
             <br />
+            <header className="text-bold  text-lg italic text-gray-400">
+              🎙️설명
+            </header>
             <article>
               제가 수료한 Codestates에서 마지막 프로젝트로 진행하였습니다. 저는
               프론트엔드를 맡았으며 제가 작성한 주요 기능으로는 회원가입과
               마이페이지를 작성하고 비로그인시 웹을 체험할 수 있는 페이지를
-              작성하여 체험 기능을 구현하였습니다. 처음으로 데이터를 시각화하기
-              위해 그래프 라이브러리인 Highcharts를 이용하였습니다.
+              작성하여 <span className="text-blue-400">체험 기능</span>을
+              구현하였습니다. 처음으로 데이터를 시각화하기 위해 그래프
+              라이브러리인 <span className="text-blue-400">Highcharts</span>를
+              이용하였습니다.
               <br />
-              웹페이지 배포를 제가 하게되어 AWS를 이용하여 첫 배포를 해봄과
-              동시에 EC2, S3, RDS를 좀 더 깊이 공부할 수 있었고, 서버 배포를
-              위해 Certbot과 Nginx를 이용하여 인증서로 HTTPS 인증을 받는것을
-              연습할 수 있었습니다.
+              <span className="text-blue-400">AWS를 이용한 프로젝트 배포</span>
+              를 제가 하게되어 첫 배포를 해봄과 동시에 EC2, S3, RDS를 좀 더 깊이
+              공부할 수 있었고, 서버 배포를 위해 Certbot과 Nginx를 이용하여
+              인증서로 HTTPS 인증을 받는것을 연습할 수 있었습니다.
               <br />
               <br />
               <div className="text-sm italic text-gray-400">
-                🌧️현재 AWS프리티어 기간이 끝나 지나친 과금으로 인해 부득이하게
-                서버를 내렸습니다.
+                🌧️현재 AWS프리티어 기간이 끝나
+                <span className="text-red-400">지나친 과금</span>으로 인해
+                부득이하게 서버를 내렸습니다.
               </div>
             </article>
             <br />
@@ -62,7 +76,7 @@ export default function Moom() {
               url="https://gilded-silence-f0d.notion.site/Ruler-m00m-77fc3425651d4d6e8ddaa0b8a344882f"
             />
             <Summary
-              fn="SKILL"
+              fn="SKILLS"
               content="React, TailwindCSS, ContextAPI, Scrollmagic"
             />
             <Summary fn="Deployment" content="AWS" />
