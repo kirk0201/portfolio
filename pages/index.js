@@ -44,7 +44,7 @@ export default function Home() {
   const { element: ele3, onMoveToElement: move3 } = useMoveScroll();
   const { element: ele4, onMoveToElement: move4 } = useMoveScroll();
   return (
-    <div className="relative w-screen">
+    <div className="relative">
       <Navbar
         move={move}
         move1={move1}
@@ -52,7 +52,7 @@ export default function Home() {
         move3={move3}
         move4={move4}
       />
-      <div className="relative">
+      <div className="relative ">
         {/* Banner */}
         <article className="relative" ref={ele}>
           <div className="relative bg-black-rgba md:h-[500px]">
