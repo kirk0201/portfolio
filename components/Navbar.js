@@ -10,7 +10,7 @@ export default function Navbar(props) {
   console.log(showMenu);
   return (
     <>
-      <div className="fixed z-10 h-16 w-screen shadow-2xl lg:bg-white">
+      <div className="fixed z-10 h-16 w-full shadow-2xl lg:bg-white">
         <div className="relative left-1/2 -translate-x-1/2 bg-gray-300 py-5 lg:w-2/3 lg:bg-transparent">
           <div className="lg:flex">
             <div className="flex justify-between bg-transparent px-10 text-center text-lg font-bold lg:w-2/3 ">
