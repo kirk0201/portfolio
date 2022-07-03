@@ -1,14 +1,17 @@
+import Slide from "./Slide";
 import Summary from "./Summary";
 
 export default function Maiim() {
   return (
     <div className="border-2 border-solid">
       <header className="py-5 text-center text-2xl font-semibold">Maiim</header>
-      <p className="text-center text-sm text-gray-400">
-        22.4 2인 프로젝트<p>진행 중</p>
-      </p>
+      <div className="text-center text-sm text-gray-400">
+        22.4 2인 프로젝트<div>진행 중</div>
+      </div>
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
-        <section>사진</section>
+        <section>
+          <Slide img1="/maiim1.gif" img2="/maiim2.gif" img3="/maiim3.gif" />
+        </section>
         <section>
           <section className="font-semibold">
             <article>

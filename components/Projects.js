@@ -6,7 +6,7 @@ export default function Projects() {
       <header className="py-5 text-center text-2xl font-semibold">
         비트코인트래커
       </header>
-      <p className="text-center">2022.02 개인 프로젝트</p>
+      <div className="text-center">2022.02 개인 프로젝트</div>
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
         <section>사진</section>
         <section>
