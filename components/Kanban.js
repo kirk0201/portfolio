@@ -1,3 +1,4 @@
+import Slide from "./Slide";
 import Summary from "./Summary";
 
 export default function Kanban() {
@@ -6,11 +7,18 @@ export default function Kanban() {
       <header className="py-5 text-center text-2xl font-semibold">
         KANBAN보드
       </header>
-      <p className="text-center text-sm text-gray-400">
+      <div className="text-center text-sm text-gray-400">
         2022.03 개인 토이 프로젝트
-      </p>
+      </div>
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
-        <section>사진</section>
+        <section>
+          <Slide
+            img1="/kanban1.gif"
+            img2="/kanban2.gif"
+            img3="/kanban3.gif"
+            img4="/kanban4.gif"
+          />
+        </section>
         <section>
           <section className="font-semibold">
             <article>

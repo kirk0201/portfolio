@@ -1,3 +1,4 @@
+import Slide from "./Slide";
 import Summary from "./Summary";
 
 export default function Bitcoin() {
@@ -6,11 +7,13 @@ export default function Bitcoin() {
       <header className="py-5 text-center text-2xl font-semibold">
         비트코인트래커
       </header>
-      <p className="text-center text-sm text-gray-400">
+      <div className="text-center text-sm text-gray-400">
         2022.02 개인 토이 프로젝트
-      </p>
+      </div>
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
-        <section>사진</section>
+        <section>
+          <Slide img1="/coin1.gif" img2="/coin2.gif" img3="/coin3.gif" />
+        </section>
         <section>
           <section className="font-semibold">
             <article>

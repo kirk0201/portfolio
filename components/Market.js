@@ -1,3 +1,4 @@
+import Slide from "./Slide";
 import Summary from "./Summary";
 
 export default function Market() {
@@ -6,12 +7,14 @@ export default function Market() {
       <header className="py-5 text-center text-2xl font-semibold">
         우리동네 생활
       </header>
-      <p className="text-center text-sm text-gray-400">
-        22.5 개인 프로젝트 풀스택<p>진행 중</p>
-      </p>
+      <div className="text-center text-sm text-gray-400">
+        22.5 개인 프로젝트 풀스택<div>진행 중</div>
+      </div>
 
       <article className="grid grid-cols-2 gap-10 py-5 px-10">
-        <section>사진</section>
+        <section>
+          <Slide img1="/market1.gif" img2="/market2.gif" img3="/market3.gif" />
+        </section>
         <section>
           <section className="font-semibold">
             <article>
