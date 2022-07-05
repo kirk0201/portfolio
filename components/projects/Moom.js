@@ -4,13 +4,13 @@ import Summary from "../Summary";
 export default function Moom() {
   return (
     <div className="rounded-xl border-2 border-solid border-gray-200 bg-white shadow-xl">
-      <header className="py-5 text-center text-[3rem] font-bold text-gray-600">
+      <header className="py-5 text-center text-4xl font-bold text-gray-600 md:text-[3rem]">
         m00m
       </header>
       <div className="text-center text-sm text-gray-400">
         2020.11 ~ 2020.12 4인 프로젝트
       </div>
-      <article className="grid grid-cols-2 gap-10 py-5 px-10">
+      <article className="gap-10 py-5 px-10 md:grid md:grid-cols-2">
         <section>
           <Slide
             img1="/moom1.gif"
@@ -68,8 +68,8 @@ export default function Moom() {
             />
             <Summary
               fn="GitHub"
-              url="https://github.com/codestates/moom_client/wiki"
-              urls="https://github.com/kirk0201/moom_client"
+              url="github.com/codestates/moom_client/wiki"
+              urls="github.com/kirk0201/moom_client"
             />
             <Summary
               fn="NOTION WIKI"
