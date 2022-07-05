@@ -4,13 +4,13 @@ import Summary from "../Summary";
 export default function Bitcoin() {
   return (
     <div className="rounded-xl border-2 border-solid border-gray-200 bg-white shadow-xl">
-      <header className="py-5 text-center text-[3rem] font-bold text-gray-600">
+      <header className="py-5 text-center text-4xl font-bold text-gray-600 md:text-[3rem]">
         비트코인트래커
       </header>
       <div className="text-center text-sm text-gray-400">
         2022.02 개인 토이 프로젝트
       </div>
-      <article className="grid grid-cols-2 gap-10 py-5 px-10">
+      <article className="gap-10 py-5 px-10 md:grid md:grid-cols-2">
         <section>
           <Slide img1="/coin1.gif" img2="/coin2.gif" img3="/coin3.gif" />
         </section>

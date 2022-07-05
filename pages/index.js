@@ -57,10 +57,9 @@ export default function Home() {
         <article className="relative" ref={ele}>
           <div className="relative bg-black-rgba md:h-[500px]">
             <Image
-              layout="responsive"
               objectFit="cover"
               alt=""
-              className="-z-10 h-[500px]"
+              className="relative -z-10 h-[300px]"
               src={desk}
             ></Image>
           </div>
@@ -93,12 +92,12 @@ export default function Home() {
         <article className="bg-gray-50">
           <section className="mx-auto w-2/3  pb-20">
             <header
-              className="pt-20 text-center text-5xl font-bold italic"
+              className="pt-20 text-center text-4xl font-bold italic md:text-5xl"
               ref={ele1}
             >
               🔎 <span className="text-red-300">About</span> me
             </header>
-            <div className="grid grid-cols-3 gap-2 pt-10 text-center text-2xl">
+            <div className="relative z-10 grid gap-2 pt-10 text-center text-2xl lg:grid-cols-3">
               <div className="flex cursor-pointer items-center justify-between rounded-lg border-2 border-solid border-gray-50 px-10 py-5 shadow-lg hover:bg-gray-300">
                 <Person style={{ fontSize: "3rem" }} />
                 <div className="flex flex-col justify-center">
@@ -174,23 +173,21 @@ export default function Home() {
               📖 <span className="text-yellow-500">S</span>kills
             </header>
             <div className="space-y-10 rounded-xl text-2xl font-bold italic ">
-              <div className="gap-2 rounded-xl border-2 border-solid border-gray-50 bg-gray-50 py-5 shadow-xl">
+              <div className="gap-2 rounded-xl border-2 border-solid border-gray-50 bg-gray-50 py-5 shadow-xl ">
                 <div className="py-5 pl-5">
                   <span className="text-red-600">L</span>anguage
                 </div>
-                <div className="flex justify-start gap-2 pl-5">
-                  <div className="border-2 border-solid py-1">
+                <div className="flex flex-wrap justify-center gap-2 space-y-2 px-5 md:justify-start md:space-y-0 ">
+                  <div className="flex justify-center border-2 border-solid py-1">
                     <Image alt="" src={html} width={190} height={100}></Image>
                   </div>
-                  <div className="border-2 border-solid py-1">
+                  <div className="flex justify-center border-2 border-solid py-1">
                     <Image alt="" src={js} width={190} height={92}></Image>
                   </div>
-                  <div className="flex items-center justify-center border-2 border-solid py-1">
-                    <div className="w-4/5">
-                      <Image alt="" src={css} width={190} height={90}></Image>
-                    </div>
+                  <div className="flex justify-center border-2 border-solid py-1">
+                    <Image alt="" src={css} width={190} height={90}></Image>
                   </div>
-                  <div className="border-2 border-solid py-1">
+                  <div className="flex justify-center border-2 border-solid py-1">
                     <Image alt="" src={ty} width={190} height={90}></Image>
                   </div>
                 </div>
@@ -201,7 +198,7 @@ export default function Home() {
                   <span className="text-gray-500"> & </span>
                   <span className="text-green-500">L</span>ibrary
                 </div>
-                <div className="flex flex-wrap justify-start gap-2 pl-5">
+                <div className="flex flex-wrap justify-center gap-2 px-5">
                   <div className="border-2 border-solid">
                     <Image alt="" src={next} width={190} height={100}></Image>
                   </div>
@@ -231,7 +228,7 @@ export default function Home() {
                 <div className="py-5 pl-5">
                   <span className="text-teal-600">T</span>ools
                 </div>
-                <div className="flex flex-wrap justify-start gap-2 pl-5">
+                <div className="flex flex-wrap justify-center gap-2 pl-5 md:justify-start">
                   <div className=" border-2  border-solid py-2">
                     <Image alt="" src={git} width={190} height={85}></Image>
                   </div>
@@ -260,7 +257,7 @@ export default function Home() {
           >
             💼 <span className="text-green-600">A</span>rchiving
           </header>
-          <div className="mx-auto flex w-1/2 rounded-xl border-2 border-solid py-5">
+          <div className="flex overflow-hidden rounded-xl border-2 border-solid p-5 md:mx-auto md:w-1/2">
             <Image alt="" src={github}></Image>
             <div className="">
               <a

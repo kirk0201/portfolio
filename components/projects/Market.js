@@ -4,7 +4,7 @@ import Summary from "../Summary";
 export default function Market() {
   return (
     <div className="rounded-xl border-2  border-solid border-gray-200 bg-white shadow-xl">
-      <header className="py-5 text-center text-[3rem] font-bold text-gray-600">
+      <header className="py-5 text-center text-4xl font-bold text-gray-600 md:text-[3rem]">
         우리동네 마켓
       </header>
       <div className="text-center text-sm text-gray-400">
@@ -12,7 +12,7 @@ export default function Market() {
         <div className="font-semibold text-red-500">진행 중</div>
       </div>
 
-      <article className="grid grid-cols-2 gap-10 py-5 px-10">
+      <article className=" gap-10 py-5 px-10 md:grid md:grid-cols-2">
         <section>
           <Slide img1="/market1.gif" img2="/market2.gif" img3="/market3.gif" />
         </section>

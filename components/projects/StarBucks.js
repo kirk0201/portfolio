@@ -4,13 +4,13 @@ import Summary from "../Summary";
 export default function StarBucks() {
   return (
     <div className="rounded-xl border-2 border-solid border-gray-200 bg-white shadow-xl">
-      <header className="py-5 text-center text-[3rem] font-bold text-gray-600">
+      <header className="py-5 text-center text-4xl font-bold text-gray-600 md:text-[3rem]">
         스타벅스 클론 코딩
       </header>
       <div className="text-center text-sm text-gray-400">
         2022.01 개인 프로젝트
       </div>
-      <article className="grid grid-cols-2 gap-10 py-5 px-10">
+      <article className="gap-10 py-5 px-10 md:grid md:grid-cols-2">
         <section>
           <Slide img1="/starbucks1.gif" img2="/starbucks2.gif" />
         </section>
@@ -48,10 +48,7 @@ export default function StarBucks() {
               fn="주요기능"
               content="React를 사용하지 않고 스타벅스 웹페이지를 클론 코딩하여 Vanilla JS와 CSS를 연습"
             />
-            <Summary
-              fn="GitHub"
-              url="https://github.com/kirk0201/starbucks_clone"
-            />
+            <Summary fn="GitHub" url="github.com/kirk0201/starbucks_clone" />
             <Summary
               fn="URL"
               url="https://compassionate-dubinsky-6a8bc2.netlify.app/"
