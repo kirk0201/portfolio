@@ -43,10 +43,7 @@ export default function Projects() {
             />
             <Summary fn="GitHub" url="https://github.com/kirk0201/portfolio" />
             <Summary fn="URL" url="https://portfolio-kjh.vercel.app/" />
-            <Summary
-              fn="SKILLS"
-              content="React, Typescript, Recoil, ApexChart, ReactQuery, Styled-Components"
-            />
+            <Summary fn="SKILLS" content="NextJS, TailwindCSS, Swiper" />
             <Summary fn="Deployment" content="vercel" />
           </section>
         </section>
