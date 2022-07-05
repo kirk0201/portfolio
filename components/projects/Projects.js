@@ -30,7 +30,8 @@ export default function Projects() {
               빠른 생산성을 위해 Next와 TailwindCSS를 이용하였고 프로젝트
               이미지는 Swiper라이브러리를 이용하여 디자인 하였습니다. 전체적인
               구조를 <span className="text-blue-400">SementicTag로 구성</span>
-              하여 효율적인 가독성을 위해 노력하였습니다.
+              하여 효율적인 가독성을 위해 노력하였습니다. 반응형 웹으로 구현하여
+              모든 기기에서 지원 가능합니다.
             </article>
             <br />
           </section>
