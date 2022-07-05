@@ -77,7 +77,7 @@ export default function Moom() {
             />
             <Summary
               fn="SKILLS"
-              content="React, TailwindCSS, ContextAPI, Scrollmagic"
+              content="React, HighChart, Tailwind CSS, ContextAPI, Amazon AWS "
             />
             <Summary fn="Deployment" content="AWS" />
           </section>
