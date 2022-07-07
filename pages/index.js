@@ -58,7 +58,7 @@ export default function Home() {
           <div className="relative bg-black-rgba pt-16 md:h-[500px]">
             <Image className="-z-10" src={desk}></Image>
           </div>
-          <section className="absolute inset-x-0 top-48 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-black-rgba p-7 md:top-64 md:w-1/2">
+          <section className="absolute inset-x-0 top-48 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-black-rgba p-7 leading-4 md:top-64 md:w-1/2">
             <header className="inline-block rounded-lg bg-blue-600 font-sans text-2xl font-bold text-blue-100 md:text-4xl">
               🔥안녕하세요 웹개발자 김재현입니다
             </header>
