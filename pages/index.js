@@ -55,15 +55,14 @@ export default function Home() {
       <div className="relative ">
         {/* Banner */}
         <article className="relative" ref={ele}>
-          <div className="relative bg-black-rgba md:h-[500px]">
+          <div className="relative bg-black-rgba pt-16  md:h-[500px]">
             <Image
-              objectFit="cover"
-              alt=""
+              objectFit="fill"
               className="relative -z-10 h-[300px]"
               src={desk}
             ></Image>
           </div>
-          <section className="absolute inset-x-0  left-1/2 top-1/2 h-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-black-rgba p-5 md:w-1/2">
+          <section className="absolute inset-x-0 top-48 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-black-rgba p-7 md:top-64 md:w-1/2">
             <span className="rounded-lg bg-blue-600 font-sans text-2xl font-bold text-blue-100 md:text-4xl">
               🔥안녕하세요 웹개발자 김재현입니다
             </span>
@@ -90,7 +89,7 @@ export default function Home() {
         </article>
         {/* About me */}
         <article className="bg-gray-50">
-          <section className="mx-auto w-2/3  pb-20">
+          <section className="mx-auto w-4/5 pb-20 md:w-2/3">
             <header
               className="pt-20 text-center text-4xl font-bold italic md:text-5xl"
               ref={ele1}
@@ -165,7 +164,7 @@ export default function Home() {
         </article>
         {/* Skills */}
         <article className="bg-yellow-100 pb-20">
-          <section className="mx-auto w-2/3">
+          <section className="mx-auto w-4/5 md:w-2/3">
             <header
               className="py-20 text-center text-5xl font-bold italic "
               ref={ele2}
@@ -250,7 +249,7 @@ export default function Home() {
           </section>
         </article>
         {/* Archiving */}
-        <article className="mx-auto w-2/3 pb-20">
+        <article className="mx-auto w-4/5 pb-20 md:w-2/3">
           <header
             className="py-20 text-center text-5xl font-bold italic"
             ref={ele3}
@@ -277,7 +276,7 @@ export default function Home() {
         </article>
         {/* Projects */}
         <article className="bg-blue-200 pb-20">
-          <section className="mx-auto w-2/3">
+          <section className="mx-auto w-4/5 md:w-2/3">
             <header
               className="py-20 text-center text-5xl font-bold italic"
               ref={ele4}
