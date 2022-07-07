@@ -52,20 +52,16 @@ export default function Home() {
         move3={move3}
         move4={move4}
       />
-      <div className="relative ">
+      <div className="relative">
         {/* Banner */}
         <article className="relative" ref={ele}>
-          <div className="relative bg-black-rgba pt-16  md:h-[500px]">
-            <Image
-              objectFit="fill"
-              className="relative -z-10 h-[300px]"
-              src={desk}
-            ></Image>
+          <div className="relative bg-black-rgba pt-16 md:h-[500px]">
+            <Image className="-z-10" src={desk}></Image>
           </div>
           <section className="absolute inset-x-0 top-48 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-black-rgba p-7 md:top-64 md:w-1/2">
-            <span className="rounded-lg bg-blue-600 font-sans text-2xl font-bold text-blue-100 md:text-4xl">
+            <header className="inline-block rounded-lg bg-blue-600 font-sans text-2xl font-bold text-blue-100 md:text-4xl">
               🔥안녕하세요 웹개발자 김재현입니다
-            </span>
+            </header>
             <br />
             <br />
 
@@ -89,15 +85,15 @@ export default function Home() {
         </article>
         {/* About me */}
         <article className="bg-gray-50">
-          <section className="mx-auto w-4/5 pb-20 md:w-2/3">
+          <section className="mx-auto px-10 pb-20 md:w-2/3">
             <header
               className="pt-20 text-center text-4xl font-bold italic md:text-5xl"
               ref={ele1}
             >
               🔎 <span className="text-red-300">About</span> me
             </header>
-            <div className="relative z-10 grid gap-2 pt-10 text-center text-2xl lg:grid-cols-3">
-              <div className="flex cursor-pointer items-center justify-between rounded-lg border-2 border-solid border-gray-50 px-10 py-5 shadow-lg hover:bg-gray-300">
+            <div className="z-10 grid grid-cols-1 gap-2 pt-10 text-center text-2xl lg:grid-cols-3">
+              <div className=" flex cursor-pointer items-center justify-between rounded-lg border-2 border-solid border-gray-50 px-10 py-5 shadow-lg hover:bg-gray-300">
                 <Person style={{ fontSize: "3rem" }} />
                 <div className="flex flex-col justify-center">
                   <span className="text-lg font-bold text-gray-400">이름</span>
